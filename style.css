@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
   }
@@ -79,4 +79,154 @@
     color: #fff;
     font-size: 1.15rem;
     cursor: pointer;
-  }
+  } */
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #1a1f38, #121212);
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: linear-gradient(145deg, rgba(50, 50, 80, 0.8), rgba(80, 80, 120, 0.9));
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5),
+              0 0 25px rgba(100, 100, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #72c6ef, #004e8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+form p {
+  color: #d6d6f5;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+form input {
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid #6cf;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.dropdown i {
+  font-size: 1.6rem;
+  color: #6cf;
+  margin-top: 2rem;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  flex: 1;
+}
+
+.select-container img {
+  width: 2rem;
+}
+
+.select-container select {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.select-container select option {
+  background-color: #333;
+  color: #fff;
+}
+
+.msg {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+form button {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 3rem;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 198, 255, 0.5);
+}
